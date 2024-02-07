@@ -4,14 +4,18 @@ import java.util.ArrayList;
 
 public class Company {
 
-	ArrayList<Employee> employees = new ArrayList<Employee>();
+	private ArrayList<Employee> employees = new ArrayList<Employee>();
 
-	public float[] payAllEmployees() {
+	public double[] payAllEmployees() {
 		return null;
 	}
 	
-	public void addEmployee(String name, float hourlyRate, float hoursWorked, String payScheme) {
-		
+	public Employee addEmployee(String name, double hourlyRate, double hoursWorked, String payScheme) {
+		return null;
+	}
+	
+	public ArrayList<Employee> getEmployees(){
+		return employees;
 	}
 
 }

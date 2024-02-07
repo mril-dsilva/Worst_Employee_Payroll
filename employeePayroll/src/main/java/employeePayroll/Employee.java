@@ -3,8 +3,8 @@ package employeePayroll;
 public class Employee {
 
 	private String name;
-	private float hourlyRate;
-	private float hoursWorked;
+	private double hourlyRate;
+	private double hoursWorked;
 	private PayScheme payScheme;
 	
 	/**
@@ -13,7 +13,7 @@ public class Employee {
 	 * @param hoursWorked
 	 * @param payScheme
 	 */
-	public Employee(String name, float hourlyRate, float hoursWorked, PayScheme payscheme) {
+	public Employee(String name, double hourlyRate, double hoursWorked, PayScheme payscheme) {
 		super();
 		this.name = name;
 		this.hourlyRate = hourlyRate;
@@ -22,11 +22,23 @@ public class Employee {
 	}
 	
 	
-	public float payEmployee() {
+	public double payEmployee() {
 		return payScheme.payEmployee(hourlyRate, hoursWorked);
 	}
 	
-	public void setHoursWorked(int hours) {
+	public String getName() {
+		return name;
+	}
+	
+	public double getHourlyRate() {
+		return hourlyRate;
+	}
+	
+	public void setHoursWorked(double hours) {
 		hoursWorked = hours;
+	}
+	
+	public double setHoursWorked() {
+		return hoursWorked;
 	}
 }
