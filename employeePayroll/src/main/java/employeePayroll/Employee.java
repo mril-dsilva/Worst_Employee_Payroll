@@ -38,7 +38,7 @@ public class Employee {
 		hoursWorked = hours;
 	}
 	
-	public double setHoursWorked() {
+	public double getHoursWorked() {
 		return hoursWorked;
 	}
 }

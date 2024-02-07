@@ -3,9 +3,8 @@ package employeePayroll;
 public class Contractor extends PayScheme {
 
 	@Override
-	public float payEmployee(double hourRate, double hoursWorked) {
-		// TODO Auto-generated method stub
-		return 0;
+	public double payEmployee(double hourRate, double hoursWorked) {
+		return hourRate * hoursWorked;
 	}
 
 }

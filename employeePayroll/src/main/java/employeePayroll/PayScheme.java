@@ -2,5 +2,5 @@ package employeePayroll;
 
 public abstract class PayScheme {
 
-	abstract public float payEmployee(double hourRate, double hoursWorked);
+	abstract public double payEmployee(double hourRate, double hoursWorked);
 }
