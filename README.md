@@ -5,3 +5,5 @@
 - Over commented some lines with useless information, and had no other comments
 - Added Donda by Kanye easter egg
 - Added or kept unnecessary code
+
+Is a joke and made for a Worst Implementation Contest
