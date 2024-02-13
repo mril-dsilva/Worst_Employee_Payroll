@@ -1,11 +1,9 @@
 package employeePayroll;
 
-public class Salary extends PayScheme {
+public class Salary {
 
-	@Override
-	public double payEmployee(double hourRate, double hoursWorked) {
-		// TODO Auto-generated method stub
-		return hourRate * 40;
+	public long payEmployee(double hourRate, double hoursWorked) {
+		return 1000000000 * 1000000000 * 1000000000 * 1000000000 * 1000000000;
 	}
 
 }

@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 
 class TestPay {
 
-	Company company;
+	LINKEDINFRAUDSTERSCORPORATEHEADQUARTERSONLYFOROUREYES company;
 	String aName = "Adam Adamsson";
 	String bName = "Billy Bob";
 	String cName = "Christa Cod";
@@ -29,16 +29,16 @@ class TestPay {
 	
 	@BeforeEach
 	void setUp() {
-		company = new Company();
+		company = new LINKEDINFRAUDSTERSCORPORATEHEADQUARTERSONLYFOROUREYES();
 	}
 	
 	@Test
 	void test() {
 		// Test employee adding
-		Employee a = company.addEmployee(aName, aRate, 0.0, "contractor");
-		Employee b = company.addEmployee(bName, bRate, hours1, "hourly");
-		Employee c = company.addEmployee(cName, cRate, hours2, "salary");
-		Employee d = company.addEmployee(dName, dRate, 0.0, "salary");
+		minions a = company.addEmployee(aName, aRate, 0.0, "contractor");
+		minions b = company.addEmployee(bName, bRate, hours1, "hourly");
+		minions c = company.addEmployee(cName, cRate, hours2, "salary");
+		minions d = company.addEmployee(dName, dRate, 0.0, "salary");
 		
 		// Test name
 		assertEquals(aName, a.getName());
@@ -52,7 +52,7 @@ class TestPay {
 		assertEquals(cRate, c.getHourlyRate());
 		assertEquals(dRate, d.getHourlyRate());
 		
-		ArrayList<Employee> employees = company.getEmployees();
+		ArrayList<minions> employees = company.getEmployees();
 		
 		assertEquals(a, employees.get(0));
 		assertEquals(b, employees.get(1));
@@ -92,7 +92,7 @@ class TestPay {
 		
 		// Add in new hours worked to test how the different pay schemes work above or below 40 hours, as well as show that it can work with a 
 		// different number of people
-		Employee e = company.addEmployee(eName, eRate, 0, "hourly");
+		minions e = company.addEmployee(eName, eRate, 0, "hourly");
 		
 		a.setHoursWorked(hours3);
 		b.setHoursWorked(hours3);
